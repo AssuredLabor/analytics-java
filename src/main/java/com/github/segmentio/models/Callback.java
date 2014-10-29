@@ -8,7 +8,8 @@ package com.github.segmentio.models;
 public interface Callback {
 	/**
 	 * Called when a response is received from the server.
-	 * @param response
+	 * @param success
+	 * @param message
 	 */
 	public void onResponse(boolean success, String message);
 }

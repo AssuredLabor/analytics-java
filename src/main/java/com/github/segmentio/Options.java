@@ -145,7 +145,7 @@ public class Options {
 
 	/**
 	 * Sets the milliseconds to wait between request retries
-	 * @param timeout backoff in milliseconds.
+	 * @param backoff delay between requests, in milliseconds.
 	 */
 	public Options setBackoff(int backoff) {
 		if (backoff < 0)
@@ -156,8 +156,8 @@ public class Options {
 	}
 	
     /**
-     * Sets the milliseconds to wait between request retries
-     * @param timeout backoff in milliseconds.
+     * Allows enabling logging of dropped payloads to the logging system
+     * @param logDroppedPayload if true, a log message will be emitted for each dropped payload
      */
     public Options setLogDroppedPayload(boolean logDroppedPayload) {
         
